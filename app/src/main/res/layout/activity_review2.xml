@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eff2f9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/previous"-->
+<!--            android:text="prev" />-->
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="0dp"
+            android:layout_margin="20dp"
+            android:id="@+id/previous"
+            android:src="@drawable/ep_back"
+            android:background="@android:color/transparent"
+            android:contentDescription="이전으로 이동"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textAlignment="center"
+             />
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/completed"-->
+<!--            android:text="V"/>-->
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="0dp"
+            android:layout_margin="20dp"
+            android:id="@+id/completed"
+            android:src="@drawable/check_light"
+            android:background="@android:color/transparent"
+            android:contentDescription="완료"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group144"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:text="공연은 어떠셨나요?" />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:id="@+id/ratingBar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:text="스토리가"/>
+            <RadioGroup
+                android:id="@+id/rgStory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textAlignment="center"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/likeStory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="좋았어요"
+                    android:textColor="@drawable/radio_text"
+                    android:padding="10dp"
+                    android:button="@null"/>
+
+                <RadioButton
+                    android:id="@+id/dislikeStory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아쉬웠어요"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radio_text"
+                    android:button="@null" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:text="눈이"/>
+            <RadioGroup
+                android:id="@+id/rgEye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/likeEye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="즐거웠어요"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radio_text"
+                    android:button="@null"/>
+
+                <RadioButton
+                    android:id="@+id/dislikeEye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아쉬웠어요"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radio_text"
+                    android:button="@null" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:text="귀가"/>
+            <RadioGroup
+                android:id="@+id/rgEar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/likeEar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="즐거웠어요"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radio_text"
+                    android:button="@null"/>
+
+                <RadioButton
+                    android:id="@+id/dislikeEar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아쉬웠어요"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radio_text"
+                    android:button="@null" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="13dp"
+                android:text="나는"/>
+            <RadioGroup
+                android:id="@+id/rgWith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/alone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="혼자서"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radio_text"
+                    android:button="@null"/>
+                <RadioButton
+                    android:id="@+id/friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="친구와"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radio_text"
+                    android:button="@null" />
+                <RadioButton
+                    android:id="@+id/family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가족과"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radio_text"
+                    android:button="@null" />
+                <RadioButton
+                    android:id="@+id/couple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="연인과"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radio_text"
+                    android:button="@null" />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:text="봤어요"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eff2f9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:id="@+id/close"-->
+<!--            android:text="close" />-->
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="0dp"
+            android:layout_margin="20dp"
+            android:id="@+id/close"
+            android:src="@drawable/ep_back"
+            android:background="@android:color/transparent"
+            android:contentDescription="이전으로 이동"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="" />
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:id="@+id/next"-->
+<!--            android:text="next"/>-->
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="0dp"
+            android:layout_margin="20dp"
+            android:id="@+id/next"
+            android:src="@drawable/ep_next"
+            android:background="@android:color/transparent"
+            android:contentDescription="다음으로 이동"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group143"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginBottom="40dp"
+            android:text="어떤 공연을 보셨나요?" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:labelFor="@id/userTitle"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical"
+                android:text="공연명"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext"
+                android:layout_marginRight="50dp"
+                android:padding="10dp"
+                android:hint="토끼와 거북이"
+                android:id="@+id/userTitle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:labelFor="@id/userPlace"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical"
+                android:text="극장"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp"
+                android:hint="예술의전당 토월극장"
+                android:id="@+id/userPlace" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:labelFor="@id/userDate"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical"
+                android:text="관람일자"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp"
+                android:hint="2023-11-01"
+                android:id="@+id/userDate" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:labelFor="@id/userTime"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical"
+                android:text="관람회차"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp"
+                android:hint="20시"
+                android:id="@+id/userTime" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:labelFor="@id/userSeat"
+                android:padding="10dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical"
+                android:text="좌석"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/edittext"
+                android:padding="10dp"
+                android:hint="1층 10열 13번"
+                android:id="@+id/userSeat" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
