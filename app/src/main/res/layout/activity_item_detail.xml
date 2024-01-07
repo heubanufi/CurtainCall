@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
     <TextView
@@ -32,6 +32,29 @@
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/abc"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="efgh"
+                android:id="@+id/efg"
+                android:textColor="@color/black"/>
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:id="@+id/reviewStar"/>
+        </LinearLayout>
 
 
     <TextView
@@ -185,7 +208,27 @@
             android:text="김씨, 박씨, 이씨, 최씨"
             android:textColor="#000000"/>
     </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/ticket_recycler_view"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--                    listitem="@layout/item_ticket" />-->
+            </ScrollView>
+        </LinearLayout>
     </LinearLayout>
+
+
+
     <!-- 플로팅 버튼 -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"

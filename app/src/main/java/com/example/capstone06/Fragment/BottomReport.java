@@ -40,15 +40,6 @@ public class BottomReport extends Fragment {
         Log.i(TAG, "onCreateView");
         view = inflater.inflate(R.layout.bottom_report, container, false);
 
-        ImageButton floatingButton = view.findViewById(R.id.fab);
-        floatingButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Review1.java로 이동
-                Intent intent = new Intent(getActivity(), Review1.class);
-                startActivity(intent);
-            }
-        });
 
         recyclerView = view.findViewById(R.id.ticket_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

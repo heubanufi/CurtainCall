@@ -26,12 +26,11 @@ public class Review1 extends AppCompatActivity {
 
         viewModel = new ViewModelProvider(this).get(ReviewViewModel.class);
 
-//        Intent intent = getIntent();
-//        Row selectedItem = (Row) intent.getParcelableExtra("selectedItem");
-//
-//        // titleText를 원하는 TextView에 설정합니다.
-//        TextView userTitle = findViewById(R.id.userTitle);
-//        userTitle.setText(selectedItem.getTitle());
+        Intent intent = getIntent();
+        String titleText = intent.getStringExtra("titleText");
+
+        TextView textView = findViewById(R.id.userTitle);
+        textView.setText(titleText);
 
 
         nextBtn = findViewById(R.id.next);
@@ -40,7 +39,7 @@ public class Review1 extends AppCompatActivity {
             public void onClick(View view) {
 
                 // 사용자 입력을 ViewModel에 저장
-                viewModel.setPerformanceName(((EditText)findViewById(R.id.userTitle)).getText().toString());
+                viewModel.setPerformanceName(((TextView)findViewById(R.id.userTitle)).getText().toString());
                 viewModel.setTheater(((EditText)findViewById(R.id.userPlace)).getText().toString());
                 viewModel.setDate(((EditText)findViewById(R.id.userDate)).getText().toString());
                 viewModel.setShowtime(((EditText)findViewById(R.id.userTime)).getText().toString());

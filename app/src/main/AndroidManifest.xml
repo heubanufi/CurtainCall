@@ -17,6 +17,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ReviewItemAdapter"
+            android:exported="false" />
+        <activity
             android:name=".Fragment.TicketItemAdapter"
             android:exported="false" />
         <activity

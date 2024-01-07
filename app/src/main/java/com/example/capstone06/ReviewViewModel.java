@@ -24,9 +24,9 @@ public class ReviewViewModel extends ViewModel {
     private String showtime;
     private String seat;
     private float rating;
-    private boolean story;
-    private boolean eye;
-    private boolean ear;
+    private String story;
+    private String eye;
+    private String ear;
     private String with;
 
 
@@ -55,13 +55,13 @@ public class ReviewViewModel extends ViewModel {
         this.rating = rating;
     }
 
-    public void setStory(boolean story) {
+    public void setStory(String story) {
         this.story = story;
     }
-    public void setEye(boolean eye) {
+    public void setEye(String eye) {
         this.eye = eye;
     }
-    public void setEar(boolean ear) {
+    public void setEar(String ear) {
         this.ear = ear;
     }
     public void setWith(String with) {

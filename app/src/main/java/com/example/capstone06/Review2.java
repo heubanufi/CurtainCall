@@ -65,30 +65,30 @@ public class Review2 extends AppCompatActivity {
                 int selectedrgStory = rgStory.getCheckedRadioButtonId();
                 if (selectedrgStory == R.id.likeStory) {
                     // "likeRadioButton"이 선택되면 true를 ViewModel에 저장
-                    viewModel.setStory(true);
+                    viewModel.setStory("스토리가 좋아요");
                 } else if (selectedrgStory == R.id.dislikeStory) {
                     // "dislikeRadioButton"이 선택되면 false를 ViewModel에 저장
-                    viewModel.setStory(false);
+                    viewModel.setStory("스토리가 아쉬워요");
                 }
 
                 // 눈
                 int selectedrgEye = rgEye.getCheckedRadioButtonId();
                 if (selectedrgEye == R.id.likeEye) {
                     // "likeRadioButton"이 선택되면 true를 ViewModel에 저장
-                    viewModel.setEye(true);
+                    viewModel.setEye("눈이 즐거워요");
                 } else if (selectedrgEye == R.id.dislikeEye) {
                     // "dislikeRadioButton"이 선택되면 false를 ViewModel에 저장
-                    viewModel.setEye(false);
+                    viewModel.setEye("눈이 아쉬워요");
                 }
 
                 // 귀
                 int selectedrgEar = rgEar.getCheckedRadioButtonId();
                 if (selectedrgEar == R.id.likeEar) {
                     // "likeRadioButton"이 선택되면 true를 ViewModel에 저장
-                    viewModel.setEar(true);
+                    viewModel.setEar("귀가 즐거워요");
                 } else if (selectedrgEar == R.id.dislikeEar) {
                     // "dislikeRadioButton"이 선택되면 false를 ViewModel에 저장
-                    viewModel.setEar(false);
+                    viewModel.setEar("귀가 아쉬워요");
                 }
 
                 //나는
